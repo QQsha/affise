@@ -1,3 +1,22 @@
+## Curl for testing:
+You can change delay response time in first link.
+
+curl --request POST --url http://localhost:8080/parser --header 'Content-Type: application/json' --data '{
+	"url": [
+	"https://httpbin.org/delay/0",
+	"https://httpbin.org/get?id=1",
+	"https://httpbin.org/get?id=2",
+	"https://httpbin.org/get?id=3",
+	"https://httpbin.org/get?id=4",
+	"https://httpbin.org/get?id=5",
+	"https://httpbin.org/get?id=6"
+	]
+}'
+
+
+
+
+## Assignment:
 Тестовое задание HTTP-мультиплексор:
 приложение представляет собой http-сервер с одним хендлером,
 хендлер на вход получает POST-запрос со списком url в json-формате
