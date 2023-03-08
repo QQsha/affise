@@ -1,10 +1,7 @@
 ## Curl for testing:
 You can change delay response time in first link.
 
-curl --request POST \
-  --url http://localhost:8080/parser \
-  --header 'Content-Type: application/json' \
-  --data '{
+curl --request POST --url http://localhost:8080/parser --header 'Content-Type: application/json' --data '{
 	"url": [
 	"https://httpbin.org/delay/0",
 	"https://httpbin.org/get?id=1",
